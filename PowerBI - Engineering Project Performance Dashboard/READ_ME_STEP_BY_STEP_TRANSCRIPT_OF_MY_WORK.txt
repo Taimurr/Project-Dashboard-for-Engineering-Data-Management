@@ -11,18 +11,18 @@ Transcript of my work (Muhammad Taimur Rizwan):
     - No changes needed
 6. For the ProjectUpdates database:
     - Fixed the Start and End Date data types to the 'Date' format
-    - Noticed duplicate columns "TeamName" and "Team" within Teams and ProjectUpdates databases so I renamed then to "Team" for consistency.
+    - Noticed duplicate columns "TeamName" and "Team" within Teams and ProjectUpdates databases so I renamed them both to "Team" for consistency.
 7. Merged Teams with ProjectUpdates for error handling and simplicity purposes.
     - After clicking to select ProjectUpdates, and then the 'Home' menu in Power Query Editor, I clicked 'Merge Queries as New' then chose ProjectUpdates and Teams. I then merged Team and TeamName  as set the Join Kind to Left Outer.
 8. Noticed a new Column called "Teams" with "Table" entered in every field under it so I clicked the 'Expand' button on the right side of the Teams column and unchecked "Use original column name as prefix" to correctly merge and show the data.
    - Removed the duplicate 'Team.1' column
-9. Reviewed each database's Applied Steps in Power Query Editor before saving and applying my ETL tool made changes.
+9. I reviewed each database's Applied Steps in Power Query Editor before saving and applying my ETL tool-made changes.
 
 
 
 -- Relationship Management -- 
 
-10. Reviewed relationships to ensure consistency (this one is the important one): ProjectUpdates[Team] → Teams[TeamName]
+10. Reviewed relationships to ensure consistency (this one is the important one I was looking for): ProjectUpdates[Team] → Teams[TeamName]
 
 -- DAX formulas --
 
